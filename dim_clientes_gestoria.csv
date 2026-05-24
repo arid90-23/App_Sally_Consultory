@@ -1,0 +1,481 @@
+dim_id_cliente,dim_nombre_empresa,dim_sector,dim_tamaño_empresa,dim_ciudad,dim_tipo_cliente,dim_riesgo_impago
+1,"Alfa Asesores",salud,pequeña,Bilbao,normal,bajo
+2,"Omega Retail  SL",comercio,pequeña,Madrid,normal,bajo
+3,"Alfa Servicios SL","servicios profesionales",mediana,Bilbao,normal,bajo
+4,"Beta Retail SL",salud,micro,Bilbao,normal,medio
+5,"Delta Retail  SL",hostelería,mediana,Madrid,normal,bajo
+6,"Delta Consulting  SL",construcción,pequeña,Madrid,normal,alto
+7,"Alfa Servicios  SL","servicios profesionales",mediana,Barcelona,VIP,bajo
+8,"Beta Servicios",comercio,mediana,Valencia,normal,bajo
+9,"Beta Retail",construcción,mediana,Valencia,normal,alto
+10,"Beta Servicios  SL",comercio,micro,Barcelona,normal,medio
+11,"Alfa Retail  SL",hostelería,pequeña,Madrid,normal,bajo
+12,"Omega Gestión  SL",hostelería,mediana,Madrid,normal,bajo
+13,"Omega Global  SL",salud,micro,Valencia,normal,medio
+14,"Delta Retail",comercio,pequeña,Madrid,normal,medio
+15,"Omega Solutions",tecnología,micro,Barcelona,normal,medio
+16,"Gamma Tech  SL",construcción,micro,Sevilla,normal,bajo
+17,"Alfa Retail  SL","servicios profesionales",mediana,Sevilla,normal,bajo
+18,"Beta Asesores  SL",comercio,pequeña,Sevilla,normal,bajo
+19,"Gamma Tech SL","servicios profesionales",pequeña,Madrid,normal,bajo
+20,"Delta Retail SL",salud,pequeña,Bilbao,normal,bajo
+21,"Gamma Servicios",construcción,pequeña,Valencia,normal,bajo
+22,"Omega Group SL",tecnología,mediana,Valencia,normal,alto
+23,"Alfa Asesores  SL",comercio,pequeña,Madrid,VIP,medio
+24,"Alfa Asesores  SL",construcción,mediana,Madrid,normal,bajo
+25,"Delta Tech",hostelería,pequeña,Barcelona,normal,alto
+26,"Beta Consulting  SL",hostelería,mediana,Barcelona,normal,medio
+27,"Omega Tech  SL",hostelería,micro,Valencia,VIP,bajo
+28,"Beta Tech  SL",tecnología,mediana,Madrid,normal,bajo
+29,"Omega Consulting SL",comercio,pequeña,Barcelona,normal,bajo
+30,"Alfa Group",comercio,pequeña,Barcelona,normal,bajo
+31,"Gamma Asesores  SL",comercio,pequeña,Barcelona,normal,medio
+32,"Omega Group SL","servicios profesionales",micro,Madrid,normal,bajo
+33,"Alfa Group SL","servicios profesionales",micro,Barcelona,normal,bajo
+34,"Omega Group  SL",comercio,pequeña,Madrid,normal,bajo
+35,"Delta Gestión",hostelería,pequeña,Barcelona,VIP,bajo
+36,"Alfa Asesores  SL",comercio,mediana,Barcelona,normal,bajo
+37,"Alfa Servicios  SL",comercio,micro,Bilbao,normal,medio
+38,"Beta Global  SL",salud,pequeña,Barcelona,normal,medio
+39,"Omega Global SL",tecnología,mediana,Madrid,normal,alto
+40,"Gamma Gestión",comercio,pequeña,Madrid,normal,bajo
+41,"Beta Tech",tecnología,mediana,Barcelona,normal,bajo
+42,"Delta Servicios SL",hostelería,pequeña,Madrid,normal,bajo
+43,"Omega Consulting","servicios profesionales",micro,Valencia,normal,alto
+44,"Alfa Gestión  SL",hostelería,mediana,Madrid,normal,medio
+45,"Beta Asesores",comercio,pequeña,Valencia,normal,bajo
+46,"Delta Consulting  SL",hostelería,micro,Valencia,normal,bajo
+47,"Alfa Servicios SL","servicios profesionales",pequeña,Barcelona,normal,alto
+48,"Alfa Servicios  SL","servicios profesionales",pequeña,Barcelona,normal,bajo
+49,"Beta Gestión  SL","servicios profesionales",mediana,Barcelona,normal,bajo
+50,"Beta Tech",comercio,mediana,Madrid,normal,bajo
+51,"Omega Retail  SL","servicios profesionales",mediana,Barcelona,normal,bajo
+52,"Beta Tech SL",salud,micro,Madrid,normal,bajo
+53,"Beta Solutions SL",construcción,mediana,Valencia,normal,bajo
+54,"Delta Consulting  SL",hostelería,mediana,Barcelona,normal,bajo
+55,"Gamma Consulting  SL",comercio,micro,Madrid,normal,bajo
+56,"Alfa Retail  SL",salud,mediana,Madrid,normal,bajo
+57,"Beta Retail",comercio,pequeña,Madrid,VIP,medio
+58,"Omega Global",hostelería,micro,Madrid,normal,bajo
+59,"Omega Asesores",salud,mediana,Madrid,normal,alto
+60,"Alfa Retail  SL",tecnología,mediana,Madrid,normal,bajo
+61,"Gamma Gestión  SL","servicios profesionales",micro,Valencia,normal,bajo
+62,"Delta Gestión  SL",tecnología,pequeña,Madrid,normal,bajo
+63,"Delta Servicios  SL",construcción,pequeña,Madrid,normal,bajo
+64,"Omega Consulting  SL",tecnología,micro,Barcelona,normal,bajo
+65,"Beta Global  SL",hostelería,micro,Barcelona,normal,medio
+66,"Omega Asesores  SL",construcción,mediana,Madrid,normal,bajo
+67,"Beta Asesores SL",comercio,pequeña,Sevilla,normal,medio
+68,"Omega Consulting SL",tecnología,pequeña,Bilbao,normal,medio
+69,"Gamma Asesores SL",hostelería,micro,Madrid,normal,medio
+70,"Alfa Gestión",construcción,pequeña,Barcelona,normal,bajo
+71,"Alfa Gestión",hostelería,mediana,Valencia,normal,alto
+72,"Delta Asesores  SL",construcción,pequeña,Madrid,normal,medio
+73,"Omega Gestión",construcción,pequeña,Bilbao,normal,bajo
+74,"Omega Retail",hostelería,mediana,Barcelona,normal,medio
+75,"Alfa Tech  SL",hostelería,pequeña,Barcelona,VIP,bajo
+76,"Gamma Asesores SL",salud,pequeña,Madrid,normal,bajo
+77,"Gamma Servicios  SL",salud,mediana,Valencia,normal,bajo
+78,"Gamma Consulting SL",comercio,micro,Madrid,normal,alto
+79,"Gamma Asesores",construcción,micro,Valencia,normal,bajo
+80,"Delta Retail",hostelería,mediana,Sevilla,normal,bajo
+81,"Delta Consulting","servicios profesionales",pequeña,Madrid,normal,bajo
+82,"Delta Asesores SL","servicios profesionales",micro,Valencia,normal,medio
+83,"Gamma Consulting",construcción,pequeña,Sevilla,normal,bajo
+84,"Gamma Retail",construcción,micro,Sevilla,normal,bajo
+85,"Gamma Global",construcción,mediana,Barcelona,normal,medio
+86,"Alfa Asesores",hostelería,pequeña,Bilbao,normal,alto
+87,"Beta Tech  SL",salud,micro,Bilbao,normal,alto
+88,"Omega Tech  SL","servicios profesionales",mediana,Madrid,normal,bajo
+89,"Alfa Tech",tecnología,micro,Valencia,normal,bajo
+90,"Alfa Solutions",construcción,pequeña,Barcelona,normal,bajo
+91,"Beta Solutions",salud,micro,Barcelona,normal,medio
+92,"Alfa Global  SL","servicios profesionales",pequeña,Bilbao,normal,bajo
+93,"Alfa Group  SL",salud,mediana,Madrid,normal,medio
+94,"Beta Solutions",tecnología,micro,Valencia,normal,alto
+95,"Gamma Servicios  SL",salud,pequeña,Madrid,normal,bajo
+96,"Alfa Solutions",construcción,mediana,Sevilla,normal,medio
+97,"Omega Tech  SL",salud,micro,Madrid,normal,bajo
+98,"Gamma Solutions  SL",comercio,micro,Barcelona,VIP,alto
+99,"Omega Asesores",comercio,mediana,Bilbao,normal,bajo
+100,"Alfa Servicios SL","servicios profesionales",pequeña,Madrid,normal,bajo
+101,"Alfa Retail",tecnología,mediana,Madrid,normal,bajo
+102,"Gamma Servicios",tecnología,micro,Barcelona,VIP,bajo
+103,"Beta Consulting  SL",comercio,micro,Madrid,normal,medio
+104,"Gamma Group  SL",comercio,mediana,Madrid,normal,medio
+105,"Gamma Asesores SL",tecnología,pequeña,Madrid,normal,medio
+106,"Gamma Retail  SL",comercio,pequeña,Madrid,normal,bajo
+107,"Beta Consulting SL",salud,micro,Barcelona,normal,bajo
+108,"Delta Asesores",construcción,mediana,Valencia,normal,medio
+109,"Alfa Tech SL",construcción,micro,Bilbao,normal,bajo
+110,"Alfa Group  SL",comercio,micro,Madrid,normal,medio
+111,"Delta Group",hostelería,pequeña,Madrid,normal,bajo
+112,"Delta Tech",comercio,mediana,Barcelona,normal,bajo
+113,"Omega Gestión SL","servicios profesionales",micro,Sevilla,normal,bajo
+114,"Delta Group  SL",construcción,mediana,Madrid,normal,medio
+115,"Gamma Global  SL",salud,micro,Barcelona,VIP,bajo
+116,"Alfa Gestión  SL",construcción,mediana,Sevilla,VIP,bajo
+117,"Alfa Solutions",hostelería,pequeña,Sevilla,normal,bajo
+118,"Omega Consulting  SL",tecnología,pequeña,Bilbao,normal,bajo
+119,"Gamma Consulting  SL",comercio,pequeña,Madrid,normal,alto
+120,"Gamma Retail",hostelería,pequeña,Barcelona,normal,bajo
+121,"Alfa Retail  SL",tecnología,micro,Barcelona,normal,bajo
+122,"Beta Servicios",comercio,micro,Barcelona,normal,medio
+123,"Gamma Solutions",construcción,pequeña,Barcelona,normal,medio
+124,"Delta Consulting  SL",construcción,pequeña,Valencia,normal,medio
+125,"Gamma Tech  SL",comercio,micro,Bilbao,VIP,medio
+126,"Delta Group",comercio,mediana,Valencia,normal,bajo
+127,"Omega Group",tecnología,mediana,Madrid,normal,bajo
+128,"Delta Asesores",construcción,mediana,Madrid,normal,medio
+129,"Omega Asesores  SL","servicios profesionales",mediana,Sevilla,normal,bajo
+130,"Gamma Retail",salud,pequeña,Barcelona,normal,alto
+131,"Gamma Gestión SL",construcción,pequeña,Barcelona,normal,bajo
+132,"Omega Asesores SL",construcción,pequeña,Madrid,normal,medio
+133,"Omega Servicios  SL",tecnología,micro,Madrid,normal,bajo
+134,"Beta Group","servicios profesionales",micro,Madrid,normal,alto
+135,"Beta Tech",comercio,micro,Barcelona,normal,medio
+136,"Beta Tech",hostelería,pequeña,Madrid,normal,bajo
+137,"Gamma Solutions  SL",salud,mediana,Madrid,normal,alto
+138,"Beta Servicios  SL",comercio,mediana,Bilbao,normal,bajo
+139,"Beta Asesores",hostelería,pequeña,Valencia,normal,bajo
+140,"Omega Asesores",hostelería,pequeña,Madrid,normal,bajo
+141,"Omega Retail  SL",construcción,pequeña,Madrid,normal,alto
+142,"Delta Tech SL",salud,mediana,Bilbao,normal,bajo
+143,"Beta Servicios SL",comercio,pequeña,Madrid,normal,medio
+144,"Gamma Gestión",tecnología,micro,Bilbao,VIP,medio
+145,"Gamma Global",salud,mediana,Madrid,normal,alto
+146,"Alfa Group  SL",hostelería,micro,Bilbao,normal,bajo
+147,"Beta Consulting  SL",comercio,micro,Sevilla,normal,medio
+148,"Gamma Global SL",hostelería,mediana,Madrid,VIP,bajo
+149,"Delta Consulting  SL",salud,micro,Barcelona,VIP,medio
+150,"Alfa Asesores  SL",comercio,pequeña,Madrid,normal,medio
+151,"Omega Retail  SL",tecnología,mediana,Madrid,normal,bajo
+152,"Omega Consulting","servicios profesionales",micro,Valencia,normal,bajo
+153,"Gamma Gestión SL",comercio,pequeña,Madrid,normal,bajo
+154,"Omega Asesores  SL",salud,pequeña,Madrid,normal,bajo
+155,"Beta Retail",comercio,mediana,Madrid,normal,medio
+156,"Gamma Tech  SL",comercio,pequeña,Madrid,normal,alto
+157,"Alfa Tech  SL",hostelería,micro,Valencia,normal,alto
+158,"Alfa Tech  SL",comercio,pequeña,Sevilla,normal,bajo
+159,"Omega Tech",comercio,micro,Sevilla,normal,bajo
+160,"Beta Group  SL",salud,micro,Madrid,normal,bajo
+161,"Omega Retail",construcción,mediana,Madrid,normal,alto
+162,"Omega Gestión  SL",comercio,micro,Madrid,normal,medio
+163,"Delta Retail",comercio,pequeña,Madrid,normal,bajo
+164,"Delta Servicios  SL","servicios profesionales",pequeña,Sevilla,normal,bajo
+165,"Delta Servicios  SL",tecnología,micro,Madrid,normal,bajo
+166,"Beta Asesores  SL",hostelería,micro,Madrid,normal,bajo
+167,"Beta Global  SL",hostelería,pequeña,Sevilla,normal,bajo
+168,"Omega Asesores",hostelería,pequeña,Madrid,normal,bajo
+169,"Omega Solutions",construcción,mediana,Valencia,normal,medio
+170,"Delta Retail",hostelería,mediana,Valencia,normal,bajo
+171,"Omega Consulting SL",hostelería,pequeña,Madrid,normal,bajo
+172,"Alfa Gestión  SL","servicios profesionales",pequeña,Madrid,normal,bajo
+173,"Alfa Retail  SL",salud,micro,Bilbao,VIP,medio
+174,"Delta Retail SL",hostelería,mediana,Madrid,normal,bajo
+175,"Delta Servicios SL",salud,pequeña,Madrid,normal,medio
+176,"Gamma Asesores  SL",comercio,mediana,Madrid,normal,bajo
+177,"Alfa Global",construcción,mediana,Valencia,normal,bajo
+178,"Delta Gestión  SL",construcción,micro,Sevilla,normal,alto
+179,"Gamma Group",construcción,micro,Barcelona,VIP,bajo
+180,"Omega Asesores SL",comercio,mediana,Barcelona,normal,medio
+181,"Delta Tech  SL",salud,pequeña,Valencia,normal,medio
+182,"Omega Global",hostelería,micro,Madrid,normal,bajo
+183,"Gamma Tech  SL",comercio,mediana,Sevilla,normal,bajo
+184,"Beta Servicios  SL","servicios profesionales",pequeña,Barcelona,normal,bajo
+185,"Gamma Group  SL","servicios profesionales",mediana,Bilbao,normal,alto
+186,"Omega Asesores  SL",construcción,micro,Valencia,normal,medio
+187,"Delta Tech",construcción,pequeña,Madrid,normal,bajo
+188,"Omega Gestión  SL",hostelería,mediana,Madrid,normal,bajo
+189,"Delta Tech  SL",tecnología,mediana,Madrid,normal,alto
+190,"Gamma Consulting",comercio,mediana,Madrid,normal,medio
+191,"Omega Gestión SL",construcción,micro,Bilbao,normal,medio
+192,"Gamma Solutions SL",comercio,pequeña,Madrid,normal,bajo
+193,"Beta Asesores",tecnología,mediana,Valencia,normal,bajo
+194,"Delta Consulting",comercio,mediana,Madrid,normal,bajo
+195,"Omega Solutions  SL",comercio,pequeña,Barcelona,normal,bajo
+196,"Alfa Asesores SL",hostelería,pequeña,Madrid,normal,medio
+197,"Gamma Solutions SL",salud,mediana,Valencia,normal,bajo
+198,"Delta Retail SL",comercio,micro,Madrid,normal,alto
+199,"Gamma Retail SL",comercio,micro,Sevilla,normal,bajo
+200,"Alfa Group SL","servicios profesionales",micro,Madrid,normal,medio
+201,"Alfa Group  SL",tecnología,pequeña,Bilbao,normal,medio
+202,"Omega Group  SL",comercio,micro,Madrid,normal,bajo
+203,"Delta Tech  SL",construcción,mediana,Barcelona,normal,bajo
+204,"Gamma Solutions  SL",comercio,pequeña,Barcelona,normal,bajo
+205,"Alfa Group SL",hostelería,pequeña,Madrid,normal,medio
+206,"Beta Solutions SL",hostelería,micro,Madrid,normal,bajo
+207,"Delta Tech  SL",comercio,micro,Madrid,normal,bajo
+208,"Alfa Retail  SL",tecnología,micro,Barcelona,normal,bajo
+209,"Beta Global",hostelería,micro,Barcelona,normal,bajo
+210,"Omega Servicios  SL",comercio,pequeña,Barcelona,normal,medio
+211,"Beta Servicios SL",comercio,mediana,Madrid,normal,alto
+212,"Omega Gestión SL",construcción,mediana,Madrid,normal,bajo
+213,"Delta Consulting  SL","servicios profesionales",mediana,Sevilla,normal,medio
+214,"Beta Group SL",hostelería,micro,Madrid,normal,bajo
+215,"Beta Solutions  SL",construcción,mediana,Sevilla,normal,medio
+216,"Alfa Servicios",comercio,pequeña,Madrid,normal,alto
+217,"Gamma Consulting  SL",salud,micro,Madrid,VIP,medio
+218,"Beta Group  SL",comercio,mediana,Madrid,normal,bajo
+219,"Delta Consulting SL",tecnología,micro,Madrid,normal,bajo
+220,"Gamma Servicios","servicios profesionales",mediana,Barcelona,normal,medio
+221,"Alfa Consulting SL",construcción,mediana,Valencia,VIP,bajo
+222,"Delta Global  SL",construcción,mediana,Valencia,normal,alto
+223,"Gamma Gestión  SL",construcción,micro,Valencia,normal,medio
+224,"Delta Servicios  SL","servicios profesionales",pequeña,Madrid,normal,medio
+225,"Delta Consulting  SL",comercio,pequeña,Barcelona,normal,medio
+226,"Gamma Global SL",hostelería,pequeña,Sevilla,normal,bajo
+227,"Delta Global",tecnología,pequeña,Sevilla,VIP,medio
+228,"Delta Retail SL",hostelería,pequeña,Sevilla,normal,medio
+229,"Gamma Tech  SL","servicios profesionales",micro,Madrid,normal,bajo
+230,"Beta Gestión SL",salud,pequeña,Valencia,normal,bajo
+231,"Beta Gestión  SL",hostelería,pequeña,Valencia,normal,medio
+232,"Delta Asesores  SL",salud,mediana,Valencia,VIP,medio
+233,"Omega Group  SL",hostelería,mediana,Sevilla,VIP,bajo
+234,"Alfa Servicios",salud,micro,Madrid,normal,alto
+235,"Alfa Global SL",tecnología,pequeña,Madrid,normal,bajo
+236,"Omega Tech  SL","servicios profesionales",mediana,Madrid,normal,bajo
+237,"Gamma Gestión  SL",comercio,pequeña,Barcelona,normal,bajo
+238,"Gamma Servicios SL","servicios profesionales",mediana,Sevilla,VIP,bajo
+239,"Omega Tech SL",comercio,mediana,Valencia,normal,bajo
+240,"Beta Asesores SL",comercio,micro,Madrid,normal,bajo
+241,"Delta Servicios  SL",salud,mediana,Madrid,normal,medio
+242,"Omega Gestión  SL",construcción,micro,Madrid,normal,alto
+243,"Gamma Solutions SL",tecnología,mediana,Barcelona,normal,bajo
+244,"Delta Servicios  SL",hostelería,pequeña,Madrid,normal,bajo
+245,"Beta Retail  SL",construcción,mediana,Madrid,normal,medio
+246,"Beta Gestión  SL",salud,pequeña,Barcelona,normal,bajo
+247,"Omega Tech  SL",tecnología,pequeña,Madrid,normal,medio
+248,"Beta Asesores  SL","servicios profesionales",pequeña,Valencia,normal,medio
+249,"Omega Solutions  SL",comercio,mediana,Valencia,normal,medio
+250,"Gamma Gestión  SL",salud,mediana,Barcelona,normal,bajo
+251,"Omega Servicios",comercio,pequeña,Bilbao,normal,bajo
+252,"Alfa Consulting",hostelería,micro,Barcelona,normal,medio
+253,"Gamma Global SL",hostelería,mediana,Madrid,normal,medio
+254,"Alfa Servicios","servicios profesionales",mediana,Madrid,normal,bajo
+255,"Omega Retail  SL",tecnología,mediana,Madrid,VIP,bajo
+256,"Omega Consulting",hostelería,mediana,Valencia,normal,medio
+257,"Alfa Consulting",hostelería,micro,Madrid,normal,medio
+258,"Gamma Gestión  SL",hostelería,pequeña,Madrid,normal,bajo
+259,"Beta Tech  SL",comercio,micro,Sevilla,normal,alto
+260,"Omega Gestión",comercio,micro,Barcelona,normal,bajo
+261,"Gamma Gestión",hostelería,micro,Sevilla,normal,alto
+262,"Omega Gestión  SL",hostelería,mediana,Sevilla,normal,bajo
+263,"Omega Consulting  SL","servicios profesionales",micro,Valencia,normal,medio
+264,"Alfa Tech  SL",comercio,mediana,Madrid,normal,bajo
+265,"Omega Gestión SL",salud,mediana,Valencia,normal,medio
+266,"Delta Solutions  SL",comercio,mediana,Barcelona,normal,bajo
+267,"Delta Tech",hostelería,micro,Madrid,normal,bajo
+268,"Gamma Global SL",comercio,pequeña,Valencia,normal,bajo
+269,"Omega Gestión",comercio,mediana,Madrid,normal,bajo
+270,"Alfa Global SL",comercio,pequeña,Barcelona,normal,bajo
+271,"Beta Tech",comercio,pequeña,Barcelona,normal,bajo
+272,"Alfa Retail  SL",hostelería,mediana,Bilbao,normal,alto
+273,"Delta Group SL",hostelería,micro,Madrid,normal,medio
+274,"Gamma Servicios  SL",comercio,micro,Valencia,normal,medio
+275,"Gamma Gestión  SL",construcción,micro,Madrid,normal,medio
+276,"Omega Global",hostelería,mediana,Madrid,normal,bajo
+277,"Omega Group","servicios profesionales",mediana,Madrid,normal,bajo
+278,"Alfa Asesores",comercio,pequeña,Madrid,normal,bajo
+279,"Omega Tech SL",comercio,mediana,Valencia,VIP,bajo
+280,"Alfa Consulting SL",comercio,mediana,Madrid,normal,bajo
+281,"Delta Retail SL",salud,micro,Barcelona,normal,bajo
+282,"Gamma Tech",salud,pequeña,Madrid,normal,bajo
+283,"Beta Group",construcción,micro,Madrid,normal,bajo
+284,"Delta Tech  SL",construcción,micro,Valencia,normal,bajo
+285,"Gamma Servicios SL",comercio,micro,Bilbao,normal,medio
+286,"Beta Gestión  SL",comercio,micro,Valencia,VIP,medio
+287,"Beta Gestión  SL","servicios profesionales",mediana,Madrid,normal,bajo
+288,"Alfa Gestión",hostelería,micro,Sevilla,normal,medio
+289,"Alfa Group  SL",hostelería,mediana,Madrid,normal,bajo
+290,"Delta Global  SL",salud,micro,Madrid,normal,medio
+291,"Delta Tech",hostelería,pequeña,Bilbao,normal,medio
+292,"Gamma Tech",hostelería,pequeña,Madrid,normal,alto
+293,"Gamma Global  SL",hostelería,pequeña,Valencia,normal,bajo
+294,"Delta Asesores  SL","servicios profesionales",micro,Madrid,normal,bajo
+295,"Gamma Gestión SL","servicios profesionales",micro,Madrid,normal,bajo
+296,"Gamma Consulting  SL",construcción,pequeña,Madrid,normal,bajo
+297,"Beta Retail  SL",comercio,mediana,Sevilla,normal,medio
+298,"Alfa Servicios  SL",hostelería,pequeña,Madrid,normal,bajo
+299,"Delta Servicios SL",hostelería,pequeña,Madrid,normal,bajo
+300,"Gamma Consulting  SL",tecnología,mediana,Barcelona,normal,medio
+301,"Delta Gestión",hostelería,mediana,Valencia,normal,bajo
+302,"Gamma Gestión",tecnología,pequeña,Madrid,normal,bajo
+303,"Alfa Group",salud,mediana,Sevilla,normal,bajo
+304,"Omega Asesores","servicios profesionales",mediana,Sevilla,normal,medio
+305,"Alfa Solutions",comercio,pequeña,Madrid,normal,bajo
+306,"Alfa Solutions  SL",construcción,mediana,Barcelona,normal,bajo
+307,"Alfa Retail  SL",hostelería,mediana,Barcelona,normal,bajo
+308,"Alfa Global SL",comercio,pequeña,Valencia,VIP,bajo
+309,"Omega Servicios  SL",comercio,mediana,Madrid,VIP,medio
+310,"Beta Servicios SL",construcción,pequeña,Sevilla,normal,medio
+311,"Delta Asesores  SL",hostelería,pequeña,Madrid,VIP,bajo
+312,"Gamma Tech",hostelería,mediana,Valencia,normal,medio
+313,"Beta Consulting  SL",hostelería,pequeña,Madrid,normal,bajo
+314,"Beta Consulting  SL",hostelería,mediana,Bilbao,normal,bajo
+315,"Alfa Global",tecnología,micro,Sevilla,normal,medio
+316,"Alfa Consulting",tecnología,pequeña,Madrid,normal,bajo
+317,"Delta Asesores  SL","servicios profesionales",pequeña,Madrid,normal,bajo
+318,"Omega Solutions",hostelería,pequeña,Madrid,normal,medio
+319,"Gamma Retail",comercio,pequeña,Barcelona,normal,bajo
+320,"Omega Asesores  SL","servicios profesionales",micro,Barcelona,VIP,alto
+321,"Beta Retail  SL",salud,pequeña,Bilbao,normal,alto
+322,"Beta Asesores  SL",tecnología,micro,Valencia,normal,bajo
+323,"Gamma Global  SL",construcción,pequeña,Barcelona,normal,alto
+324,"Beta Servicios SL","servicios profesionales",micro,Madrid,normal,alto
+325,"Omega Retail",hostelería,micro,Madrid,normal,medio
+326,"Beta Tech  SL",construcción,mediana,Barcelona,normal,medio
+327,"Beta Tech",construcción,micro,Madrid,normal,bajo
+328,"Delta Solutions  SL",hostelería,mediana,Madrid,normal,alto
+329,"Beta Consulting SL",comercio,mediana,Valencia,normal,bajo
+330,"Gamma Group  SL",hostelería,pequeña,Barcelona,normal,medio
+331,"Beta Tech SL",tecnología,mediana,Madrid,normal,medio
+332,"Delta Asesores  SL",construcción,micro,Madrid,VIP,bajo
+333,"Omega Gestión  SL",hostelería,micro,Bilbao,normal,bajo
+334,"Beta Gestión",comercio,pequeña,Madrid,normal,bajo
+335,"Gamma Solutions  SL",hostelería,mediana,Sevilla,normal,medio
+336,"Gamma Tech  SL",tecnología,mediana,Madrid,normal,medio
+337,"Delta Solutions  SL",tecnología,mediana,Valencia,normal,bajo
+338,"Gamma Servicios  SL","servicios profesionales",mediana,Madrid,normal,bajo
+339,"Alfa Servicios  SL",hostelería,mediana,Sevilla,normal,bajo
+340,"Gamma Gestión SL",comercio,mediana,Valencia,normal,medio
+341,"Beta Retail SL",construcción,mediana,Madrid,normal,bajo
+342,"Omega Servicios",hostelería,mediana,Madrid,normal,medio
+343,"Alfa Group  SL",comercio,micro,Barcelona,normal,bajo
+344,"Gamma Solutions  SL",construcción,pequeña,Madrid,normal,alto
+345,"Delta Tech  SL",comercio,pequeña,Barcelona,normal,medio
+346,"Delta Gestión SL",salud,pequeña,Barcelona,normal,bajo
+347,"Omega Global",salud,pequeña,Barcelona,normal,bajo
+348,"Omega Gestión  SL",salud,micro,Barcelona,normal,bajo
+349,"Gamma Retail  SL",comercio,micro,Valencia,normal,bajo
+350,"Beta Asesores  SL","servicios profesionales",mediana,Barcelona,normal,medio
+351,"Alfa Asesores SL","servicios profesionales",micro,Madrid,normal,bajo
+352,"Beta Global  SL",construcción,mediana,Madrid,VIP,medio
+353,"Delta Gestión  SL",hostelería,micro,Madrid,normal,bajo
+354,"Gamma Asesores SL","servicios profesionales",pequeña,Barcelona,normal,bajo
+355,"Gamma Servicios  SL",hostelería,mediana,Madrid,normal,alto
+356,"Omega Consulting  SL",comercio,mediana,Barcelona,normal,bajo
+357,"Beta Retail",construcción,micro,Sevilla,normal,bajo
+358,"Delta Asesores",construcción,mediana,Sevilla,normal,bajo
+359,"Beta Servicios",salud,micro,Valencia,normal,bajo
+360,"Gamma Retail SL",hostelería,micro,Madrid,normal,bajo
+361,"Beta Group",comercio,micro,Bilbao,normal,bajo
+362,"Gamma Servicios  SL",hostelería,pequeña,Madrid,normal,bajo
+363,"Delta Solutions",construcción,mediana,Madrid,normal,bajo
+364,"Delta Retail SL",salud,pequeña,Bilbao,VIP,medio
+365,"Omega Tech  SL",hostelería,micro,Madrid,normal,bajo
+366,"Delta Servicios SL",salud,micro,Barcelona,normal,bajo
+367,"Delta Asesores  SL",hostelería,mediana,Madrid,normal,bajo
+368,"Alfa Servicios SL","servicios profesionales",mediana,Barcelona,normal,bajo
+369,"Delta Global SL","servicios profesionales",micro,Madrid,VIP,bajo
+370,"Alfa Gestión SL",construcción,micro,Madrid,normal,alto
+371,"Gamma Tech  SL",hostelería,pequeña,Bilbao,normal,bajo
+372,"Gamma Group  SL",comercio,mediana,Sevilla,normal,bajo
+373,"Delta Gestión SL",salud,micro,Sevilla,normal,alto
+374,"Alfa Global  SL",hostelería,mediana,Madrid,normal,bajo
+375,"Omega Servicios",comercio,mediana,Barcelona,normal,bajo
+376,"Alfa Gestión  SL",tecnología,micro,Madrid,VIP,bajo
+377,"Delta Group  SL",hostelería,pequeña,Barcelona,normal,bajo
+378,"Omega Servicios  SL",construcción,pequeña,Sevilla,normal,bajo
+379,"Alfa Tech SL",hostelería,micro,Valencia,normal,bajo
+380,"Omega Solutions  SL",hostelería,mediana,Valencia,normal,bajo
+381,"Delta Solutions  SL",hostelería,pequeña,Barcelona,VIP,medio
+382,"Beta Group  SL",comercio,pequeña,Sevilla,normal,bajo
+383,"Delta Asesores SL",hostelería,mediana,Madrid,VIP,bajo
+384,"Omega Solutions  SL",construcción,micro,Sevilla,normal,medio
+385,"Delta Tech  SL",comercio,micro,Barcelona,normal,alto
+386,"Gamma Asesores",hostelería,micro,Madrid,normal,medio
+387,"Alfa Asesores  SL",tecnología,pequeña,Madrid,normal,bajo
+388,"Alfa Tech",hostelería,micro,Valencia,normal,medio
+389,"Gamma Global  SL",construcción,micro,Valencia,normal,bajo
+390,"Gamma Global",construcción,mediana,Valencia,normal,medio
+391,"Omega Asesores  SL",hostelería,pequeña,Madrid,normal,bajo
+392,"Gamma Asesores SL",hostelería,micro,Madrid,normal,alto
+393,"Beta Asesores  SL",hostelería,pequeña,Bilbao,normal,bajo
+394,"Omega Gestión  SL",construcción,micro,Valencia,normal,medio
+395,"Gamma Global  SL",salud,pequeña,Barcelona,normal,bajo
+396,"Beta Consulting SL",hostelería,mediana,Valencia,normal,bajo
+397,"Alfa Consulting  SL",hostelería,micro,Barcelona,normal,medio
+398,"Alfa Global SL",hostelería,pequeña,Sevilla,VIP,medio
+399,"Delta Global  SL",hostelería,micro,Madrid,normal,bajo
+400,"Alfa Global  SL",comercio,pequeña,Barcelona,normal,medio
+401,"Alfa Tech SL",hostelería,pequeña,Valencia,normal,bajo
+402,"Omega Group SL",comercio,micro,Barcelona,normal,bajo
+403,"Omega Tech  SL",comercio,mediana,Madrid,normal,bajo
+404,"Omega Solutions  SL",construcción,micro,Madrid,normal,bajo
+405,"Omega Group  SL",hostelería,mediana,Barcelona,normal,medio
+406,"Gamma Retail  SL",salud,micro,Madrid,normal,bajo
+407,"Beta Global  SL",hostelería,micro,Sevilla,normal,medio
+408,"Alfa Global  SL",salud,micro,Barcelona,normal,bajo
+409,"Delta Retail  SL",tecnología,pequeña,Barcelona,VIP,bajo
+410,"Alfa Solutions SL",comercio,micro,Madrid,normal,bajo
+411,"Beta Retail  SL",hostelería,micro,Barcelona,normal,alto
+412,"Gamma Global  SL",construcción,mediana,Barcelona,VIP,bajo
+413,"Delta Group",comercio,mediana,Barcelona,VIP,alto
+414,"Delta Servicios SL",tecnología,pequeña,Barcelona,normal,bajo
+415,"Omega Asesores SL",construcción,micro,Bilbao,normal,medio
+416,"Delta Consulting  SL",hostelería,mediana,Bilbao,normal,bajo
+417,"Omega Retail  SL",hostelería,pequeña,Barcelona,normal,medio
+418,"Beta Group",hostelería,mediana,Barcelona,normal,medio
+419,"Delta Consulting SL",salud,mediana,Barcelona,normal,bajo
+420,"Beta Tech SL",comercio,pequeña,Barcelona,VIP,bajo
+421,"Beta Tech",construcción,pequeña,Sevilla,normal,bajo
+422,"Beta Asesores",hostelería,mediana,Madrid,normal,bajo
+423,"Alfa Servicios  SL",construcción,micro,Madrid,normal,bajo
+424,"Omega Group",hostelería,pequeña,Valencia,normal,bajo
+425,"Delta Retail  SL","servicios profesionales",micro,Valencia,normal,medio
+426,"Omega Asesores  SL",comercio,micro,Barcelona,normal,medio
+427,"Delta Solutions  SL",construcción,mediana,Valencia,normal,alto
+428,"Omega Gestión  SL",comercio,micro,Sevilla,normal,medio
+429,"Alfa Retail  SL",comercio,pequeña,Madrid,VIP,bajo
+430,"Delta Tech SL",hostelería,pequeña,Barcelona,normal,medio
+431,"Omega Servicios  SL",construcción,micro,Barcelona,normal,bajo
+432,"Beta Tech SL",tecnología,mediana,Madrid,VIP,bajo
+433,"Gamma Consulting  SL",construcción,micro,Barcelona,normal,bajo
+434,"Omega Servicios",tecnología,micro,Madrid,normal,bajo
+435,"Alfa Global SL",tecnología,pequeña,Barcelona,normal,medio
+436,"Delta Retail",comercio,micro,Barcelona,normal,bajo
+437,"Delta Tech SL",construcción,pequeña,Bilbao,normal,medio
+438,"Beta Global  SL",comercio,pequeña,Barcelona,normal,bajo
+439,"Delta Solutions  SL",comercio,micro,Barcelona,normal,bajo
+440,"Gamma Global  SL",construcción,pequeña,Sevilla,normal,bajo
+441,"Omega Solutions  SL",tecnología,pequeña,Barcelona,normal,medio
+442,"Gamma Servicios  SL","servicios profesionales",pequeña,Valencia,normal,medio
+443,"Gamma Group  SL",hostelería,pequeña,Madrid,normal,alto
+444,"Gamma Tech  SL",tecnología,micro,Sevilla,normal,bajo
+445,"Delta Retail",construcción,mediana,Sevilla,normal,bajo
+446,"Alfa Global SL",tecnología,pequeña,Madrid,normal,bajo
+447,"Gamma Servicios",hostelería,mediana,Madrid,normal,medio
+448,"Beta Tech  SL","servicios profesionales",pequeña,Valencia,normal,bajo
+449,"Gamma Global",hostelería,micro,Madrid,normal,medio
+450,"Gamma Solutions  SL",comercio,micro,Madrid,VIP,alto
+451,"Omega Tech  SL",hostelería,micro,Valencia,normal,bajo
+452,"Delta Asesores SL",hostelería,mediana,Madrid,normal,medio
+453,"Beta Group  SL",construcción,pequeña,Barcelona,normal,alto
+454,"Gamma Group",hostelería,micro,Valencia,normal,bajo
+455,"Beta Tech SL",hostelería,mediana,Madrid,normal,medio
+456,"Alfa Consulting  SL",salud,pequeña,Bilbao,normal,bajo
+457,"Delta Retail SL",tecnología,micro,Valencia,normal,bajo
+458,"Beta Tech SL",hostelería,pequeña,Madrid,normal,bajo
+459,"Omega Servicios SL","servicios profesionales",pequeña,Madrid,normal,bajo
+460,"Omega Asesores  SL",tecnología,pequeña,Madrid,normal,bajo
+461,"Beta Solutions  SL",construcción,mediana,Valencia,normal,medio
+462,"Delta Gestión",salud,mediana,Barcelona,normal,bajo
+463,"Gamma Retail  SL","servicios profesionales",micro,Barcelona,VIP,bajo
+464,"Gamma Asesores  SL",comercio,mediana,Barcelona,normal,medio
+465,"Alfa Retail SL",hostelería,mediana,Sevilla,VIP,bajo
+466,"Alfa Gestión",comercio,micro,Sevilla,normal,medio
+467,"Delta Retail",hostelería,pequeña,Madrid,normal,bajo
+468,"Omega Retail SL",salud,pequeña,Madrid,normal,medio
+469,"Delta Gestión  SL","servicios profesionales",micro,Barcelona,normal,bajo
+470,"Omega Consulting  SL","servicios profesionales",pequeña,Madrid,normal,bajo
+471,"Alfa Tech SL",tecnología,micro,Madrid,normal,medio
+472,"Alfa Servicios",comercio,micro,Barcelona,normal,bajo
+473,"Alfa Solutions  SL",construcción,pequeña,Sevilla,VIP,bajo
+474,"Alfa Gestión SL",comercio,pequeña,Valencia,normal,medio
+475,"Beta Consulting",hostelería,pequeña,Valencia,normal,medio
+476,"Alfa Gestión",construcción,pequeña,Barcelona,normal,bajo
+477,"Omega Retail  SL",tecnología,mediana,Madrid,normal,medio
+478,"Omega Asesores  SL",comercio,pequeña,Madrid,VIP,medio
+479,"Beta Consulting  SL",construcción,micro,Valencia,normal,alto
+480,"Gamma Asesores",comercio,mediana,Madrid,normal,medio

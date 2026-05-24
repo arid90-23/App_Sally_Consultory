@@ -1,0 +1,7 @@
+dim_id_servicio,dim_nombre_servicio,dim_precio_base,dim_coste_base,dim_duracion_media_horas,dim_complejidad
+1,Contable,120.00,80.00,3,media
+2,Laboral,100.00,70.00,2,media
+3,Fiscal,250.00,120.00,5,alta
+4,Seguros,90.00,85.00,2,baja
+5,PRL,80.00,60.00,2,baja
+6,"Análisis VIP",500.00,200.00,8,alta

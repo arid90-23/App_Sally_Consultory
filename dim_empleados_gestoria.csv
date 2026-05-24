@@ -1,0 +1,12 @@
+dim_id_empleado,dim_nombre,dim_rol,dim_especialidad,dim_salario_mensual,dim_fecha_contratacion,dim_horas_jornada,dim_productividad_base
+1,"Carlos Pérez",manager,fiscal,4500.00,2020-05-10,40,0.87
+2,"Ana López",manager,laboral,4300.00,2021-07-18,40,0.77
+3,"Luis García",senior,contable,3000.00,2021-02-04,40,1.03
+4,"Marta Sánchez",senior,fiscal,3200.00,2020-12-31,40,0.73
+5,"Jorge Ruiz",senior,laboral,2900.00,2022-06-27,40,1.06
+6,"Lucía Torres",junior,contable,1800.00,2023-12-10,40,1.17
+7,"Pablo Díaz",junior,fiscal,1900.00,2019-04-12,40,0.7
+8,"Elena Martín",junior,laboral,1750.00,2021-05-23,40,1.2
+9,"Raúl Navarro",senior,seguros,2800.00,2018-11-27,40,1.01
+10,"Sofía Romero",senior,PRL,2700.00,2022-01-22,40,1.01
+11,"David Castro",freelance,abogado,2500.00,2023-11-06,10,0.7
