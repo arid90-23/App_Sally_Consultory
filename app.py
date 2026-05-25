@@ -40,7 +40,6 @@ df_clientes["cliente_display"] = (
 # TÍTULO
 
 st.title("Portal Sally Consultory")
-st.caption("Gestión operativa y financiera del cliente")
 
 
 # FILTRO GLOBAL CLIENTE
@@ -206,7 +205,7 @@ with tab2:
     col1, col2, col3, col4 = st.columns([2,1,1,1])
 
     col1.metric(
-        "Total facturado",
+        "💰 Total facturado",
         f"{total_facturado:,.2f} €"
     )
 
@@ -225,7 +224,67 @@ with tab2:
         facturas_vencidas
     )
 
+    # =====================================================
+    # ALERTAS FINANCIERAS
+    # =====================================================
+
+    facturas_vencidas_df = df_facturacion_filtrada[
+        df_facturacion_filtrada["Estado pago"] == "vencido"
+    ]
+
+    # =====================================================
+    # SEMÁFORO FINANCIERO
+    # =====================================================
+
+    if facturas_vencidas == 0:
+
+        st.success(
+            "🟢 Cliente sin incidencias de pago"
+        )
+
+    elif facturas_vencidas <= 2:
+
+        st.warning(
+            "🟡 Cliente con riesgo moderado de impago"
+        )
+
+    else:
+
+        st.error(
+            "🔴 Cliente con riesgo alto de impago"
+        )
+
+    # =====================================================
+    # ALERTA FACTURAS VENCIDAS
+    # =====================================================
+
+    if len(facturas_vencidas_df) > 0:
+
+        st.error(
+            f"⚠️ Este cliente tiene "
+            f"{len(facturas_vencidas_df)} "
+            f"facturas vencidas"
+        )
+
+        st.subheader("🚨 Facturas vencidas")
+
+        st.dataframe(
+            facturas_vencidas_df[
+                [
+                    "Número factura",
+                    "Fecha factura",
+                    "Fecha vencimiento",
+                    "Importe facturado (€)",
+                    "Estado pago"
+                ]
+            ],
+            use_container_width=True
+        )
+
+    # =====================================================
     # TABLA FACTURACIÓN
+    # =====================================================
+
     st.subheader("Detalle de facturación")
 
     st.dataframe(
@@ -237,5 +296,6 @@ with tab2:
                 "Importe facturado (€)",
                 "Estado pago"
             ]
-        ]
+        ],
+        use_container_width=True
     )
