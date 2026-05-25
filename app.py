@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-# =====================================================
+
 # CARGA DE DATOS CSV
-# =====================================================
 
 df = pd.read_csv("fact_tareas_gestoria.csv")
 
@@ -23,15 +22,13 @@ df_servicios = pd.read_csv(
     "dim_servicios_gestoria.csv"
 )
 
-# =====================================================
+
 # ORDENAR CLIENTES
-# =====================================================
 
 df_clientes = df_clientes.sort_values("dim_id_cliente")
 
-# =====================================================
+
 # TEXTO VISUAL CLIENTE
-# =====================================================
 
 df_clientes["cliente_display"] = (
     df_clientes["dim_id_cliente"].astype(str)
@@ -39,26 +36,27 @@ df_clientes["cliente_display"] = (
     + df_clientes["dim_nombre_empresa"]
 )
 
-# =====================================================
+
 # TÍTULO
-# =====================================================
 
 st.title("Portal Sally Consultory")
+st.caption("Gestión operativa y financiera del cliente")
 
-# =====================================================
+
 # FILTRO GLOBAL CLIENTE
-# =====================================================
 
 cliente_seleccionado = st.selectbox(
     "Selecciona cliente",
-    df_clientes["cliente_display"]
+    ["ID Cliente - Nombre Empresa"] + list(df_clientes["cliente_display"])
 )
+
+if cliente_seleccionado == "ID Cliente - Nombre Empresa":
+    st.stop()
 
 cliente = int(cliente_seleccionado.split(" - ")[0])
 
-# =====================================================
+
 # FILTRADOS
-# =====================================================
 
 df_filtrado = df[
     df["fact_id_cliente"] == cliente
@@ -68,9 +66,8 @@ df_facturacion_filtrada = df_facturacion[
     df_facturacion["fact_id_cliente"] == cliente
 ]
 
-# =====================================================
+
 # JOIN EMPLEADOS
-# =====================================================
 
 df_filtrado = df_filtrado.merge(
     df_empleados[
@@ -81,9 +78,8 @@ df_filtrado = df_filtrado.merge(
     how="left"
 )
 
-# =====================================================
+
 # JOIN SERVICIOS
-# =====================================================
 
 df_filtrado = df_filtrado.merge(
     df_servicios[
@@ -94,9 +90,8 @@ df_filtrado = df_filtrado.merge(
     how="left"
 )
 
-# =====================================================
+
 # RENOMBRE COLUMNAS TAREAS
-# =====================================================
 
 df_filtrado = df_filtrado.rename(columns={
     "fact_id_tarea": "ID Tarea",
@@ -110,9 +105,8 @@ df_filtrado = df_filtrado.rename(columns={
     "fact_horas_dedicadas": "Horas dedicadas"
 })
 
-# =====================================================
+
 # RENOMBRE COLUMNAS FACTURACIÓN
-# =====================================================
 
 df_facturacion_filtrada = df_facturacion_filtrada.rename(columns={
     "fact_numero_factura": "Número factura",
@@ -122,15 +116,13 @@ df_facturacion_filtrada = df_facturacion_filtrada.rename(columns={
     "fact_estado_pago": "Estado pago"
 })
 
-# =====================================================
+
 # PESTAÑAS
-# =====================================================
 
 tab1, tab2 = st.tabs(["Tareas", "Facturación"])
 
-# =====================================================
-# TAB 1 - TAREAS
-# =====================================================
+
+# TABLA 1 - TAREAS
 
 with tab1:
 
@@ -179,9 +171,8 @@ with tab1:
         ]
     )
 
-# =====================================================
-# TAB 2 - FACTURACIÓN
-# =====================================================
+
+# TABLA 2 - FACTURACIÓN
 
 with tab2:
 
