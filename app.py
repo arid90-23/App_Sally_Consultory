@@ -9,6 +9,18 @@ st.set_page_config(
     layout="wide"
 )
 
+# SELECTOR CLIENTE
+
+cliente_seleccionado = st.selectbox(
+    "Selecciona cliente",
+    ["ID Cliente - Nombre Empresa"] + list(df_clientes["cliente_display"])
+)
+
+if cliente_seleccionado == "ID Cliente - Nombre Empresa":
+    st.stop()
+
+cliente = int(cliente_seleccionado.split(" - ")[0])
+
 # CARGA DE DATOS
 
 df = pd.read_csv("fact_tareas_gestoria.csv")
@@ -43,45 +55,22 @@ df = df.merge(
     how="left"
 )
 
-# LAYOUT PRINCIPAL
-col_sidebar, col_main = st.columns([1, 3], gap="large")
-
-with col_sidebar:
-    st.subheader("Clientes")
-
-    cliente_seleccionado = st.selectbox(
-        "Selecciona cliente",
-        df_clientes["cliente_display"]
-    )
-
-    cliente = int(cliente_seleccionado.split(" - ")[0])
-
-with col_main:
-    st.title("Portal Sally Consultory")
-
-    # FILTROS
-    df_filtrado = df[df["fact_id_cliente"] == cliente]
-
-    df_facturacion_filtrada = df_facturacion[
-        df_facturacion["fact_id_cliente"] == cliente
-    ]
-
-    # FORMATO IMPORTE
+# FORMATO IMPORTE
     df_facturacion_filtrada["fact_importe_facturado"] = (
         df_facturacion_filtrada["fact_importe_facturado"]
         .map("{:,.2f} €".format)
     )
 
-    # ORDEN FACTURAS
+# ORDEN FACTURAS
     df_facturacion_filtrada = df_facturacion_filtrada.sort_values(
         "fact_fecha_vencimiento"
     )
 
-    # TABS
+# TABS
     tab1, tab2 = st.tabs(["Gestión de tareas", "Gestión financiera"])
 
  
-    # TABLA 1 - TAREAS
+# TABLA 1 - TAREAS
 
     with tab1:
 
@@ -132,7 +121,7 @@ with col_main:
             use_container_width=True
         )
 
-    # TABLA 2 - FACTURACIÓN
+# TABLA 2 - FACTURACIÓN
     
     with tab2:
 
