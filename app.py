@@ -9,7 +9,9 @@ st.set_page_config(
     layout="wide"
 )
 
+# =========================
 # CARGA DE DATOS
+# =========================
 
 df = pd.read_csv("fact_tareas_gestoria.csv")
 df_facturacion = pd.read_csv("fact_facturacion_gestoria.csv")
@@ -17,29 +19,43 @@ df_clientes = pd.read_csv("dim_clientes_gestoria.csv")
 df_empleados = pd.read_csv("dim_empleados_gestoria.csv")
 df_servicios = pd.read_csv("dim_servicios_gestoria.csv")
 
-# ORDENAR CLIENTES
+# =========================
+# PREPARAR CLIENTES
+# =========================
+
 df_clientes = df_clientes.sort_values("dim_id_cliente")
 
-# CREAR LABEL CLIENTE (ANTES DE USARLO)
 df_clientes["cliente_display"] = (
     df_clientes["dim_id_cliente"].astype(str)
     + " - "
     + df_clientes["dim_nombre_empresa"]
 )
 
-# SELECTOR CLIENTE
+# =========================
+# SELECTOR CLIENTE (YA CON DATOS)
+# =========================
 
 cliente_seleccionado = st.selectbox(
     "Selecciona cliente",
-    ["ID Cliente - Nombre Empresa"] + list(df_clientes["cliente_display"])
+    df_clientes["cliente_display"]
 )
-
-if cliente_seleccionado == "ID Cliente - Nombre Empresa":
-    st.stop()
 
 cliente = int(cliente_seleccionado.split(" - ")[0])
 
-# REEMPLAZAR ID EMPLEADO POR NOMBRE
+# =========================
+# FILTROS
+# =========================
+
+df_filtrado = df[df["fact_id_cliente"] == cliente]
+
+df_facturacion_filtrada = df_facturacion[
+    df_facturacion["fact_id_cliente"] == cliente
+]
+
+# =========================
+# MERGE DATOS
+# =========================
+
 df = df.merge(
     df_empleados[["dim_id_empleado", "dim_nombre"]],
     left_on="fact_id_empleado",
@@ -47,7 +63,6 @@ df = df.merge(
     how="left"
 )
 
-# REEMPLAZAR ID SERVICIO POR NOMBRE
 df = df.merge(
     df_servicios[["dim_id_servicio", "dim_nombre_servicio"]],
     left_on="fact_id_servicio",
@@ -55,29 +70,40 @@ df = df.merge(
     how="left"
 )
 
-# FORMATO IMPORTE
+# =========================
+# FORMATO FACTURAS
+# =========================
+
 df_facturacion_filtrada["fact_importe_facturado"] = (
-        df_facturacion_filtrada["fact_importe_facturado"]
-        .map("{:,.2f} €".format)
+    df_facturacion_filtrada["fact_importe_facturado"]
+    .map("{:,.2f} €".format)
 )
 
-# ORDEN FACTURAS
 df_facturacion_filtrada = df_facturacion_filtrada.sort_values(
-        "fact_fecha_vencimiento"
+    "fact_fecha_vencimiento"
 )
 
+# =========================
+# TÍTULO
+# =========================
+
+st.title("Sally Consultory")
+
+# =========================
 # TABS
+# =========================
+
 tab1, tab2 = st.tabs(["Gestión de tareas", "Gestión financiera"])
 
- 
-# TABLA 1 - TAREAS
+# =========================
+# TAB 1
+# =========================
 
 with tab1:
 
     st.subheader("Resumen de tareas")
 
     total_tareas = len(df_filtrado)
-
     completadas = len(df_filtrado[df_filtrado["fact_estado"] == "completado"])
     retrasadas = len(df_filtrado[df_filtrado["fact_estado"] == "retrasado"])
     en_progreso = len(df_filtrado[df_filtrado["fact_estado"] == "en progreso"])
@@ -121,8 +147,10 @@ with tab1:
         use_container_width=True
     )
 
-# TABLA 2 - FACTURACIÓN
-    
+# =========================
+# TAB 2
+# =========================
+
 with tab2:
 
     st.subheader("Resumen financiero")
@@ -144,70 +172,3 @@ with tab2:
     col2.metric("🟢 Pagadas", facturas_pagadas)
     col3.metric("🟡 Pendientes", facturas_pendientes)
     col4.metric("🔴 Vencidas", facturas_vencidas)
-
-    st.divider()
-
-    facturas_vencidas_df = df_facturacion_filtrada[
-        df_facturacion_filtrada["fact_estado_pago"] == "vencido"
-    ]
-
-    if facturas_vencidas == 0:
-        st.success("Cliente sin incidencias de pago")
-    elif facturas_vencidas <= 2:
-        st.warning("Cliente con riesgo moderado de impago")
-    else:
-        st.error("Cliente con riesgo alto de impago")
-
-    if len(facturas_vencidas_df) > 0:
-
-        st.error(f"El cliente tiene {len(facturas_vencidas_df)} facturas vencidas")
-
-        st.subheader("Facturas vencidas")
-
-        st.dataframe(
-            facturas_vencidas_df[
-                [
-                    "fact_numero_factura",
-                    "fact_fecha_factura",
-                    "fact_fecha_vencimiento",
-                    "fact_importe_facturado",
-                    "fact_estado_pago"
-                ]
-            ].rename(
-                columns={
-                    "fact_numero_factura": "Número factura",
-                    "fact_fecha_factura": "Fecha factura",
-                    "fact_fecha_vencimiento": "Fecha vencimiento",
-                    "fact_importe_facturado": "Importe facturado",
-                    "fact_estado_pago": "Estado pago"
-                }
-            ),
-            hide_index=True,
-            use_container_width=True
-        )
-
-    st.divider()
-
-    st.subheader("Detalle de facturación")
-
-    st.dataframe(
-        df_facturacion_filtrada[
-            [
-                "fact_numero_factura",
-                "fact_fecha_factura",
-                "fact_fecha_vencimiento",
-                "fact_importe_facturado",
-                "fact_estado_pago"
-            ]
-        ].rename(
-            columns={
-                "fact_numero_factura": "Número factura",
-                "fact_fecha_factura": "Fecha factura",
-                "fact_fecha_vencimiento": "Fecha vencimiento",
-                "fact_importe_facturado": "Importe facturado",
-                "fact_estado_pago": "Estado pago"
-            }
-        ),
-        hide_index=True,
-        use_container_width=True
-    )
