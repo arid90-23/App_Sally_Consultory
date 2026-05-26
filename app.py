@@ -56,15 +56,15 @@ df = df.merge(
 )
 
 # FORMATO IMPORTE
-    df_facturacion_filtrada["fact_importe_facturado"] = (
+df_facturacion_filtrada["fact_importe_facturado"] = (
         df_facturacion_filtrada["fact_importe_facturado"]
         .map("{:,.2f} €".format)
-    )
+)
 
 # ORDEN FACTURAS
-    df_facturacion_filtrada = df_facturacion_filtrada.sort_values(
+df_facturacion_filtrada = df_facturacion_filtrada.sort_values(
         "fact_fecha_vencimiento"
-    )
+)
 
 # TABS
     tab1, tab2 = st.tabs(["Gestión de tareas", "Gestión financiera"])
