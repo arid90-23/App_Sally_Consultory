@@ -9,18 +9,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# SELECTOR CLIENTE
-
-cliente_seleccionado = st.selectbox(
-    "Selecciona cliente",
-    ["ID Cliente - Nombre Empresa"] + list(df_clientes["cliente_display"])
-)
-
-if cliente_seleccionado == "ID Cliente - Nombre Empresa":
-    st.stop()
-
-cliente = int(cliente_seleccionado.split(" - ")[0])
-
 # CARGA DE DATOS
 
 df = pd.read_csv("fact_tareas_gestoria.csv")
@@ -38,6 +26,18 @@ df_clientes["cliente_display"] = (
     + " - "
     + df_clientes["dim_nombre_empresa"]
 )
+
+# SELECTOR CLIENTE
+
+cliente_seleccionado = st.selectbox(
+    "Selecciona cliente",
+    ["ID Cliente - Nombre Empresa"] + list(df_clientes["cliente_display"])
+)
+
+if cliente_seleccionado == "ID Cliente - Nombre Empresa":
+    st.stop()
+
+cliente = int(cliente_seleccionado.split(" - ")[0])
 
 # REEMPLAZAR ID EMPLEADO POR NOMBRE
 df = df.merge(
