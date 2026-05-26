@@ -80,9 +80,9 @@ with col_main:
     # TABS
     tab1, tab2 = st.tabs(["Gestión de tareas", "Gestión financiera"])
 
-    # =========================
-    # TAB 1 — TAREAS
-    # =========================
+ 
+    # TABLA 1 - TAREAS
+
     with tab1:
 
         st.subheader("Resumen de tareas")
@@ -132,9 +132,8 @@ with col_main:
             use_container_width=True
         )
 
-    # =========================
-    # TAB 2 — FACTURACIÓN
-    # =========================
+    # TABLA 2 - FACTURACIÓN
+    
     with tab2:
 
         st.subheader("Resumen financiero")
