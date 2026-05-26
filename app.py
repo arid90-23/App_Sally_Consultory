@@ -44,9 +44,13 @@ df = df.merge(
 )
 
 # LAYOUT PRINCIPAL
-col_sidebar, col_main = st.columns([1, 3], gap="large")
 
-with col_sidebar:
+col_left, col_center, col_right = st.columns([1, 3, 1])
+
+with col_center:
+    st.title("Portal Sally Consultory")
+
+    # SELECTOR DE CLIENTE (ahora arriba del todo)
     st.subheader("Clientes")
 
     cliente_seleccionado = st.selectbox(
@@ -55,9 +59,6 @@ with col_sidebar:
     )
 
     cliente = int(cliente_seleccionado.split(" - ")[0])
-
-with col_main:
-    st.title("Portal Sally Consultory")
 
     # FILTROS
     df_filtrado = df[df["fact_id_cliente"] == cliente]
