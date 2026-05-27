@@ -1,33 +1,32 @@
-# IMPORTACIONES
+# == Importación de librerias ==
 
 import streamlit as st
 import pandas as pd
 
-# CONFIGURACIÓN PÁGINA
+# == Configuración de la página de la interfaz ==
 st.set_page_config(
     page_title="Portal Sally Consultory",
     layout="wide"
 )
 
-# CARGA DE DATOS
-
+# == Carga de datos CSV para convertirlos en DataFrames ==
 df = pd.read_csv("fact_tareas_gestoria.csv")
 df_facturacion = pd.read_csv("fact_facturacion_gestoria.csv")
 df_clientes = pd.read_csv("dim_clientes_gestoria.csv")
 df_empleados = pd.read_csv("dim_empleados_gestoria.csv")
 df_servicios = pd.read_csv("dim_servicios_gestoria.csv")
 
-# ORDENAR CLIENTES
+# == Ordenar los clientes por ID ==
 df_clientes = df_clientes.sort_values("dim_id_cliente")
 
-# CREAR LABEL CLIENTE (ANTES DE USARLO)
+# == Crear una label cliente ==
 df_clientes["cliente_display"] = (
     df_clientes["dim_id_cliente"].astype(str)
     + " - "
     + df_clientes["dim_nombre_empresa"]
 )
 
-# REEMPLAZAR ID EMPLEADO POR NOMBRE
+# == Reemplazar el ID del empleado por el nombre ==
 df = df.merge(
     df_empleados[["dim_id_empleado", "dim_nombre"]],
     left_on="fact_id_empleado",
@@ -35,7 +34,7 @@ df = df.merge(
     how="left"
 )
 
-# REEMPLAZAR ID SERVICIO POR NOMBRE
+# == Reemplazar el ID del servicio por el nombre ==
 df = df.merge(
     df_servicios[["dim_id_servicio", "dim_nombre_servicio"]],
     left_on="fact_id_servicio",
@@ -43,14 +42,14 @@ df = df.merge(
     how="left"
 )
 
-# LAYOUT PRINCIPAL
+# == Establecer la estructura de la páginad usando columnas ==
 
 col_left, col_center, col_right = st.columns([1, 3, 1])
 
 with col_center:
     st.title("Portal Sally Consultory")
 
-    # SELECTOR DE CLIENTE (ahora arriba del todo)
+    # == Añadir selector del cliente ==
     st.subheader("Clientes")
 
     cliente_seleccionado = st.selectbox(
@@ -60,29 +59,29 @@ with col_center:
 
     cliente = int(cliente_seleccionado.split(" - ")[0])
 
-    # FILTROS
+    # == Filtros de clientes ==
     df_filtrado = df[df["fact_id_cliente"] == cliente]
 
     df_facturacion_filtrada = df_facturacion[
         df_facturacion["fact_id_cliente"] == cliente
     ]
 
-    # FORMATO IMPORTE
+    # == Definir el formato de los importes ==
     df_facturacion_filtrada["fact_importe_facturado"] = (
         df_facturacion_filtrada["fact_importe_facturado"]
         .map("{:,.2f} €".format)
     )
 
-    # ORDEN FACTURAS
+    # == Ordenar facturas por fecha de vencimiento == 
     df_facturacion_filtrada = df_facturacion_filtrada.sort_values(
         "fact_fecha_vencimiento"
     )
 
-    # TABS
+    # == Crear pestañas ==
     tab1, tab2 = st.tabs(["Gestión de tareas", "Gestión financiera"])
 
  
-    # TABLA 1 - TAREAS
+    # == Pestaña 1 - tareas ==
 
     with tab1:
 
@@ -133,7 +132,7 @@ with col_center:
             use_container_width=True
         )
 
-    # TABLA 2 - FACTURACIÓN
+    # == Pestaña 2 - facturación ==
     
     with tab2:
 
