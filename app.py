@@ -42,7 +42,7 @@ df = df.merge(
     how="left"
 )
 
-# == Establecer la estructura de la páginad usando columnas ==
+# == Establecer la estructura de la páginas usando columnas ==
 
 col_left, col_center, col_right = st.columns([1, 3, 1])
 
