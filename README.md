@@ -1,4 +1,4 @@
-# App_Sally_Consultory  
+# App_Sally_Consultory  
 ## Proyecto Integrador
 
 Interfaz desarrollada con Streamlit para la visualización de tareas y facturación de clientes de una gestoría.
@@ -6,9 +6,9 @@ Interfaz desarrollada con Streamlit para la visualización de tareas y facturaci
 ---
 
 ## Tecnologías utilizadas
-- Python  
-- pandas  
-- Streamlit  
+- Python  
+- pandas  
+- Streamlit  
 
 ---
 
@@ -18,6 +18,7 @@ Instalar dependencias:
 
 ```bash
 pip install -r requirements.txt
+```
 
 Ejecutar aplicación:
 
